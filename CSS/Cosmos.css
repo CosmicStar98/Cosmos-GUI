@@ -1,0 +1,16 @@
+#clickgui {
+  position: absolute;
+  z-index: 9;
+  background-color: #424949;
+  border: 2px solid #BA68C8;
+  text-align: center;
+  width: 143px;
+}
+
+#clickguiheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #212121;
+  color: #BA68C8;
+}
