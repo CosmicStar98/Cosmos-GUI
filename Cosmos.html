@@ -5,7 +5,6 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
   <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
   <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
@@ -20,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
-  <style id="compiled-css" type="text/css">
-      #clickgui {
+ <style>
+  #clickgui {
   position: absolute;
   z-index: 9;
   background-color: #424949;
@@ -50,12 +49,7 @@
   background-color: rgba(0,0,0,0.4);
   z-index: 2;
  }
-    /* EOS */
-  </style>
-
-<script>
-console.image("https://i.ibb.co/S3szDn5/Welcome-Cosmos.png");
-</script>
+ </style>
 
 <link id="7CSS" rel="stylesheet" type="text/css" href="https://unpkg.com/7.css" media="all"><link id="ClickGUI" rel="stylesheet" type="text/css" href="https://download844.mediafire.com/emrw0ov36jbg/e06us9rovnfkxv3/Cosmos+GUI+CSS.css" media="all"></head>
 <body>
@@ -100,7 +94,8 @@ document.getElementsByTagName('body')[0].innerHTML += "<script src='https://gith
 }
 </script>
 
-<script>function loadScript5()  {
+<script>
+function loadScript5()  {
 document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CosmicBOT.js'></script>";
 }
 </script>
@@ -214,7 +209,9 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+</script>
 
+<script>
 var cssId = '7CSS';
 if (!document.getElementById(cssId))
 {
@@ -236,7 +233,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://download844.mediafire.com/emrw0ov36jbg/e06us9rovnfkxv3/Cosmos+GUI+CSS.css';
+    link.href = 'http://download844.mediafire.com/6mt9cphr8jvg/e06us9rovnfkxv3/Cosmos+GUI+CSS.css';
     link.media = 'all';
     head.appendChild(link);
 }
