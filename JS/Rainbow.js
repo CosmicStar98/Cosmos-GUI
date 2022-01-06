@@ -1,0 +1,1 @@
+javascript:setInterval(function(){socket.emit('command', {list:['color']})}, 888);
