@@ -1,4 +1,4 @@
-#clickgui {
+clickgui {
   position: absolute;
   z-index: 9;
   background-color: #424949;
@@ -7,7 +7,7 @@
   width: 143px;
 }
 
-#clickguiheader {
+clickguiheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
