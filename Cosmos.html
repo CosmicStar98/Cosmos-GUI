@@ -20,7 +20,7 @@
 
 
  <style>
-  clickgui {
+ #clickgui {
   position: absolute;
   z-index: 9;
   background-color: #424949;
@@ -29,7 +29,7 @@
   width: 143px;
 }
 
-clickguiheader {
+ #clickguiheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
@@ -37,7 +37,7 @@ clickguiheader {
   color: #BA68C8;
 }
 
-overlay {
+ #overlay {
   position: absolute;
   display: none;
   width: 100%;
@@ -209,9 +209,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-</script>
 
-<script>
 var cssId = '7CSS';
 if (!document.getElementById(cssId))
 {
