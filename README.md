@@ -11,7 +11,7 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/37b3cd8a4326983d265744bdea3ce1bf08d2fba3/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/ff98d94dec9a9c21898cf0eca3800e91865076ca/Cosmos.html"), false );
 xmlHttp.send( null );
     
 var inject  = document.createElement("div");
@@ -39,7 +39,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/d8513227fe610404eaf12648c63c0b8d6714a188/CSS/Cosmos.css';
+    link.href = 'https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/8663e52fbd305816e83f102b512245bb28ca8dea/CSS/Cosmos.css';
     link.media = 'all';
     head.appendChild(link);
 }
