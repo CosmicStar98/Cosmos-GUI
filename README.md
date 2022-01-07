@@ -11,56 +11,69 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/c0a36c4a76f909d42667ed7495a8659e96b5de19/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/5fd440c0f32883803ba7e75716be329746e6317c/Cosmos.html"), false );
 xmlHttp.send( null );
     
-var inject  = document.createElement("div");
+var inject  = document.createElement("cosmos");
 inject.innerHTML = xmlHttp.responseText
 document.body.insertBefore (inject, document.body.firstChild);
  
+function consolealert() {
+console.log("%cCosmos Injected!", "color: purple; font-family: Courier New, monospace; font-size: 5.5em; font-weight: bolder; text-shadow: #000 1px 1px; text-align: center;");
+}
+
 function loadScript1()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/Rainbow.js'></script>";
+javascript:setInterval(function(){socket.emit('command', {list:['color']})}, 888);
 }
- 
+
 function loadScript2()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CrashTTS.js'></script>";
+socket.emit('talk',{text:"[[llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll COSMOS"});var e = 0;
 }
- 
+
 function loadScript3()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/EarrapeTTS.js'></script>";
+socket.emit('talk',{text:"COSMOS AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA! [[lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+"});var e = 0;
 }
- 
+
 function loadScript4()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/FixTTS.js'></script>";
+javascript:speak = {};var e = socket.on('talk',n=>{speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(n.text))});
 }
- 
+
 function loadScript5()  {
 document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CosmicBOT.js'></script>";
 }
+
+function loadScript6() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
  
-function loadScript6()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/Clock.js'></script>";
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+ 
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+ 
+  document.getElementById("room_info").innerText = time; 
+  let t = setTimeout(function(){ loadScript6() }, 1000);
 }
- 
+loadScript6();
+}
+
 function loadScript7()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/Clippy.js'></script>";
+(()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Clippy",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
- 
-function loadScript8()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
- 
-function loadScript9()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
- 
-function loadScript10()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
- 
-function loadScript11()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
+
  
 function newTab()  {
 window.open(
