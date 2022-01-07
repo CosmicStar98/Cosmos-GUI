@@ -11,7 +11,7 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/5fd440c0f32883803ba7e75716be329746e6317c/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/2c005bc4f4a08c2f1bd85aa7c6f780f3b53e135e/Cosmos.html"), false );
 xmlHttp.send( null );
     
 var inject  = document.createElement("cosmos");
@@ -27,23 +27,23 @@ javascript:setInterval(function(){socket.emit('command', {list:['color']})}, 888
 }
 
 function loadScript2()  {
-socket.emit('talk',{text:"[[llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll COSMOS"});var e = 0;
-}
-
-function loadScript3()  {
-socket.emit('talk',{text:"COSMOS AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA! [[lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
-"});var e = 0;
-}
-
-function loadScript4()  {
 javascript:speak = {};var e = socket.on('talk',n=>{speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(n.text))});
 }
 
-function loadScript5()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CosmicBOT.js'></script>";
-}
+function loadScript3()  {
+var cssId = 'CosmicBOT';
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.type = 'text/javascript';
+    link.href = 'https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CosmicBOT.js';
+    link.media = 'all';
+    head.appendChild(link);
+}}
 
-function loadScript6() {
+function loadScript4() {
   let date = new Date(); 
   let hh = date.getHours();
   let mm = date.getMinutes();
@@ -65,12 +65,11 @@ function loadScript6() {
    let time = hh + ":" + mm + ":" + ss + " " + session;
  
   document.getElementById("room_info").innerText = time; 
-  let t = setTimeout(function(){ loadScript6() }, 1000);
+  let t = setTimeout(function(){ loadScript4() }, 1000);
 }
-loadScript6();
-}
+loadScript4();
 
-function loadScript7()  {
+function loadScript5()  {
 (()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Clippy",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
 
