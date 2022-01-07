@@ -11,38 +11,12 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/ff98d94dec9a9c21898cf0eca3800e91865076ca/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/aaf87d9136a750eaf80a7d96d330af5c47ebbeb0/Cosmos.html"), false );
 xmlHttp.send( null );
     
 var inject  = document.createElement("div");
 inject.innerHTML = xmlHttp.responseText
 document.body.insertBefore (inject, document.body.firstChild);
- 
-var cssId = '7CSS';
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://unpkg.com/7.css';
-    link.media = 'all';
-    head.appendChild(link);
-}
- 
-var cssId = 'ClickGUI';
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/8663e52fbd305816e83f102b512245bb28ca8dea/CSS/Cosmos.css';
-    link.media = 'all';
-    head.appendChild(link);
-}
  
 function loadScript1()  {
 document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/Rainbow.js'></script>";
