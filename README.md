@@ -11,7 +11,7 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/2c005bc4f4a08c2f1bd85aa7c6f780f3b53e135e/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/636559e5bbea05590904270962a6eeb3a86c90be/Cosmos.html"), false );
 xmlHttp.send( null );
     
 var inject  = document.createElement("cosmos");
@@ -31,17 +31,9 @@ javascript:speak = {};var e = socket.on('talk',n=>{speechSynthesis.cancel();spee
 }
 
 function loadScript3()  {
-var cssId = 'CosmicBOT';
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.type = 'text/javascript';
-    link.href = 'https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/CosmicBOT.js';
-    link.media = 'all';
-    head.appendChild(link);
-}}
+window.open(
+"https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/main/JS/CosmicBOT.js", "_blank");
+}
 
 function loadScript4() {
   let date = new Date(); 
