@@ -14,7 +14,9 @@
   <script src="https://cdn.socket.io/4.4.1/socket.io.msgpack.min.js.map"></script>
   <script src="https://cdn.socket.io/4.4.1/socket.io.esm.min.js"></script>
   <script src="https://cdn.socket.io/4.4.1/socket.io.esm.min.js.map"></script>
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
  <style>
  #clickgui {
@@ -33,7 +35,9 @@
   background-color: #212121;
   color: #BA68C8;
 }
+</style>
 
+<style>
  #overlay {
   position: absolute;
   display: none;
@@ -48,8 +52,7 @@
  }
  </style>
 
-<link id="7CSS" rel="stylesheet" type="text/css" href="https://unpkg.com/7.css" media="all"><link id="ClickGUI" rel="stylesheet" type="text/css" href="https://cdn.discordapp.com/attachments/819637404805234759/928804364112527430/Cosmos.css" media="all"></head>
-<body>
+<link id="7CSS" rel="stylesheet" type="text/css" href="https://unpkg.com/7.css" media="all">
   <div id="clickgui" style="minimum-width: 140px">
   <div id="clickguiheader" style="max-width: 140px"><marquee direction="left" scrollamount="6" behavior="scroll">»★«║🅲🅾🆂🅼🅾🆂 ║»★«</marquee></div>
   <p><button onclick="loadScript1()">Rainbow Bonzi</button></p>
@@ -59,10 +62,7 @@
   <p><button onclick="loadScript5()">CosmicBOT</button></p>
   <p><button onclick="loadScript6()">Clock</button></p>
   <p><button onclick="loadScript7()">Clippy</button></p>
-  <p><button onclick="loadScript8()">Menu Option 8</button></p>
-  <p><button onclick="loadScript9()">Menu Option 9</button></p>
-  <p><button onclick="loadScript10()">Menu Option 10</button></p>
-  <p><button onclick="loadScript11()">Menu Option 11</button></p>
+  <div id="clickguiheader" style="max-width: 140px"><marquee direction="right" scrollamount="6" behavior="scroll">»★«║🅲🅾🆂🅼🅾🆂 ║»★«</marquee></div>
   <p><button onclick="newTab()">➡️ Visit The Repo ⬅️</button></p>
 </div>
 <div id="overlay"></div>
@@ -106,30 +106,6 @@ document.getElementsByTagName('body')[0].innerHTML += "<script src='https://gith
 <script>
 function loadScript7()  {
 document.getElementsByTagName('body')[0].innerHTML += "<script src='https://github.com/CosmicStar98/Cosmos-GUI/raw/main/JS/Clippy.js'></script>";
-}
-</script>
-
-<script>
-function loadScript8()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
-</script>
-
-<script>
-function loadScript9()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
-</script>
-
-<script>
-function loadScript10()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
-}
-</script>
-
-<script>
-function loadScript11()  {
-document.getElementsByTagName('body')[0].innerHTML += "<script src='testing.js'></script>";
 }
 </script>
 
@@ -206,31 +182,4 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-var cssId = '7CSS';
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://unpkg.com/7.css';
-    link.media = 'all';
-    head.appendChild(link);
-}
-
-var cssId = 'ClickGUI';
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://cdn.discordapp.com/attachments/819637404805234759/928804364112527430/Cosmos.css';
-    link.media = 'all';
-    head.appendChild(link);
-}
-</script>
 </body></html>
