@@ -11,7 +11,7 @@
 var xmlHttp = null;
  
 xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/636559e5bbea05590904270962a6eeb3a86c90be/Cosmos.html"), false );
+xmlHttp.open( "GET", ("https://raw.githubusercontent.com/CosmicStar98/Cosmos-GUI/43cbc64eff2d0a5eaa019a6ec83c7fb48a090c24/Cosmos.html"), false );
 xmlHttp.send( null );
     
 var inject  = document.createElement("cosmos");
