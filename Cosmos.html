@@ -49,17 +49,16 @@
  }
  </style>
 
-<link id="XPCSS" rel="stylesheet" type="text/css" href="https://unpkg.com/xp.css" media="all">
+<link id="7CSS" rel="stylesheet" type="text/css" href="https://unpkg.com/7.css" media="all">
   <div id="clickgui" style="minimum-width: 140px">
   <div id="clickguiheader" style="max-width: 140px"><marquee direction="left" scrollamount="6" behavior="scroll">»★«║🅲🅾🆂🅼🅾🆂 ║»★«</marquee></div>
   <p><button onclick="loadScript1()">Rainbow Bonzi</button></p>
   <p><button onclick="loadScript2()">Fix TTS</button></p>
   <p><button onclick="loadScript3()">CosmicBOT</button></p>
-//  <p><button onclick="loadScript4()">Clock</button></p>
-  <p><button onclick="loadScript5()">Spawn Clippy</button></p>
-  <p><button onclick="loadScript6()">Spawn Merlin</button></p>
-  <p><button onclick="loadScript7()">Spawn Links The Cat</button></p>
-  <p><button onclick="loadScript8()">Spawn Rover The Dog</button></p>
+  <p><button onclick="loadScript4()">Spawn Clippy</button></p>
+  <p><button onclick="loadScript5()">Spawn Merlin</button></p>
+  <p><button onclick="loadScript6()">Spawn Links The Cat</button></p>
+  <p><button onclick="loadScript7()">Spawn Rover The Dog</button></p>
   <p><button onclick="newTab()">Visit The Repo</button></p>
   <video width="140" height="240" autoplay >
   <source src="https://cdn.discordapp.com/attachments/819637404805234759/850396962951790602/video.mp4" type="video/mp4">
@@ -94,54 +93,25 @@ window.open(
 </script>
 
 <script type="text/javascript">
-function loadScript4() {
-  let date = new Date(); 
-  let hh = date.getHours();
-  let mm = date.getMinutes();
-  let ss = date.getSeconds();
-  let session = "AM";
- 
-  if(hh == 0){
-      hh = 12;
-  }
-  if(hh > 12){
-      hh = hh - 12;
-      session = "PM";
-   }
- 
-   hh = (hh < 10) ? "0" + hh : hh;
-   mm = (mm < 10) ? "0" + mm : mm;
-   ss = (ss < 10) ? "0" + ss : ss;
-    
-   let time = hh + ":" + mm + ":" + ss + " " + session;
- 
-  document.getElementById("room_info").innerText = time; 
-  let t = setTimeout(function(){ loadScript4() }, 1000);
-}
-loadScript4();
-}
-</script>
-
-<script type="text/javascript">
-function loadScript5()  {
+function loadScript4()  {
 (()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Clippy",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
 </script>
 
 <script type="text/javascript">
-function loadScript6()  {
+function loadScript5()  {
 (()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Merlin",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
 </script>
 
 <script type="text/javascript">
-function loadScript7()  {
+function loadScript6()  {
 (()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Links",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
 </script>
 
 <script type="text/javascript">
-function loadScript8()  {
+function loadScript7()  {
 (()=>{var b,c,a=document,f="onreadystatechange",h="https://rawgithub.com/smore-inc/clippy.js/master/build/",j=(p,q)=>{p.readyState?p[f]=()=>{"loaded"!=p.readyState&&"complete"!=p.readyState||(p[f]=null,q&&q())}:p.onload=function(){q&&q()}},k=()=>{clippy.load("Rover",p=>{$(".clippy").css("position","fixed"),$(".clippy").css("z-index",1e3),p.show(),p.moveTo(100,100)})},m=()=>{(c=a.createElement("script")).src=h+"clippy.js",a.body.appendChild(c);var p=a.createElement("link");p.rel="stylesheet",p.type="text/css",p.media="all",p.href=h+"clippy.css",a.getElementsByTagName("head")[0].appendChild(p)};"undefined"==typeof jQuery?(b=a.createElement("script"),b.src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",a.body.appendChild(b),j(b,()=>{m(),j(c,k)})):"undefined"==typeof clippy?(m(),j(c,k)):k()})();
 }
 </script>
@@ -215,7 +185,7 @@ function dragElement(elmnt) {
 </script>
 
 <script>
-var cssId = 'XPCSS';
+var cssId = '7CSS';
 if (!document.getElementById(cssId))
 {
     var head  = document.getElementsByTagName('head')[0];
@@ -223,7 +193,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://unpkg.com/xp.css';
+    link.href = 'https://unpkg.com/7.css';
     link.media = 'all';
     head.appendChild(link);
 }
