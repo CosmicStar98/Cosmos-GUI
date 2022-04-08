@@ -6,6 +6,5 @@
 
 TO-DO:
 - Add the ability to load CosmicBOT via the gui
-- Seperate button javascript from the injection script
 - Add support for loading virus scripts via the gui
 - Fix for CORS issue without needing a chrome extension
