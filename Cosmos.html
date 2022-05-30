@@ -87,11 +87,11 @@ javascript:speak = {};var e = socket.on('talk',n=>{speechSynthesis.cancel();spee
 
 <script type="text/javascript">
 function loadScript3()  {
-var socket = io("http://server.erik.red:3000")
+var socket = io(window.location.href)
 socket.emit('login',{name:'CosmicBOT {c@hub}',room:''})
 socket.on('reconnected',reconnect)
 var reconnect = function(){
-    var socket = io("http://server.erik.red:3000")
+    var socket = io(window.location.href)
 	socket.emit('login',{name:'CosmicBOT {c@hub}',room:''})
     socket.on('talk',function(data){
         var text = data.text
